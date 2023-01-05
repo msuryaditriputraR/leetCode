@@ -10,7 +10,7 @@ const searchInsert = function (nums, target) {
         else start = mid + 1;
     }
 
-    return start;
+    return end + 1;
 };
 
 console.log(searchInsert([1, 3, 5, 6], 4));
