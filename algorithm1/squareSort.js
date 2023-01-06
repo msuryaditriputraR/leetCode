@@ -1,3 +1,4 @@
+// Best Algorithm O(N) 🌟
 const sortedSqunumsres = function (nums) {
     const result = [];
     let start = 0,
@@ -15,6 +16,7 @@ const sortedSqunumsres = function (nums) {
     return result;
 };
 
+// Algorithm O(n log n)
 function sortedSqunumsres2(nums) {
     return nums.map((a) => a ** 2).sort((a, b) => a - b);
 }
