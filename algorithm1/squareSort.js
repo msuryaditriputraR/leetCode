@@ -15,4 +15,9 @@ const sortedSqunumsres = function (nums) {
     return result;
 };
 
+function sortedSqunumsres2(nums) {
+    return nums.map((a) => a ** 2).sort((a, b) => a - b);
+}
+
 console.log(sortedSqunumsres([-4, -1, 0, 3, 10]));
+console.log(sortedSqunumsres2([-4, -1, 0, 3, 10]));
