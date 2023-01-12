@@ -13,7 +13,7 @@
 
 /* ==================== SOLUTION WITH RECURSIVE ===================== */
 
-var mergeTwoLists = function (l1, l2) {
+const mergeTwoLists = function (l1, l2) {
     if (l1 == null) return l2;
     if (l2 == null) return l1;
 
@@ -27,7 +27,7 @@ var mergeTwoLists = function (l1, l2) {
 };
 
 /* ==================== SOLUTION WITH WHILE LOOP ===================== */
-var mergeTwoLists2 = function (l1, l2) {
+const mergeTwoLists2 = function (l1, l2) {
     // Initialise a new LinkedList with a dummy ListNode
     let newList = new ListNode(0);
 
