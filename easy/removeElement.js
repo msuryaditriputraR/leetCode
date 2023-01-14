@@ -22,5 +22,21 @@ var removeElement2 = function (nums, val) {
     return i;
 };
 
+var removeElement3 = function (nums, val) {
+    let i = 0,
+        n = nums.length;
+
+    while (i < n) {
+        if (nums[i] === val) {
+            nums[i] = nums[n - 1];
+            n--;
+        } else {
+            i++;
+        }
+    }
+    return n;
+};
+
 console.log(removeElement([0, 1, 2, 2, 3, 0, 4, 2], 2));
 console.log(removeElement2([0, 1, 2, 2, 3, 0, 4, 2], 2));
+console.log(removeElement3([0, 1, 2, 2, 3, 0, 4, 2], 2));
