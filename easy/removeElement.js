@@ -1,4 +1,4 @@
-var removeElement = function (nums, val) {
+const removeElement = function (nums, val) {
     for (let j = 0; j < nums.length; j++) {
         if (nums[j] === val) {
             nums.splice(j, 1);
@@ -9,7 +9,7 @@ var removeElement = function (nums, val) {
     return nums.length;
 };
 
-var removeElement2 = function (nums, val) {
+const removeElement2 = function (nums, val) {
     let i = 0,
         n = nums.length;
 
@@ -22,7 +22,7 @@ var removeElement2 = function (nums, val) {
     return i;
 };
 
-var removeElement3 = function (nums, val) {
+const removeElement3 = function (nums, val) {
     let i = 0,
         n = nums.length;
 
