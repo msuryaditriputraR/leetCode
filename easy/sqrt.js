@@ -15,4 +15,9 @@ const sqrt = function (x) {
     return start - 1;
 };
 
+const sqrt2 = function (x) {
+    return Math.floor(Math.sqrt(x));
+};
+
 console.log(sqrt(6));
+console.log(sqrt2(10));
