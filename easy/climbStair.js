@@ -13,4 +13,15 @@ const climbStair = function (n) {
     return second;
 };
 
-console.log(climbStair(4));
+const climbStair2 = function (n) {
+    return fibonacci(0, 1, n);
+
+    function fibonacci(first, second, n) {
+        return n === 1
+            ? first + second
+            : fibonacci(second, first + second, n - 1);
+    }
+};
+
+console.log(climbStair(10));
+console.log(climbStair2(10));
