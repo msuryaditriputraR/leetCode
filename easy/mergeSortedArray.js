@@ -20,7 +20,18 @@ const mergeSortedArray = function (nums1, m, nums2, n) {
     }
 };
 
-mergeSortedArray(nums1, 0, [1], 1);
+const mergeSortedArray2 = function (nums1, m, nums2, n) {
+    nums1.splice(m, n);
+    nums1.push(...nums2);
+    nums1.sort((a, b) => a - b);
+};
+
+// mergeSortedArray(nums1, 0, [1], 1);
+// console.log(nums1);
+// mergeSortedArray(nums11, 3, [2, 5, 6], 3);
+// console.log(nums11);
+
+mergeSortedArray2(nums1, 0, [1], 1);
 console.log(nums1);
-mergeSortedArray(nums11, 3, [2, 5, 6], 3);
+mergeSortedArray2(nums11, 3, [2, 5, 6], 3);
 console.log(nums11);
