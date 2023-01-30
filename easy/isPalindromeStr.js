@@ -37,7 +37,7 @@
  * @param {string} s
  * @return {boolean}
  */
-var isPalindrome = function (s) {
+const isPalindrome = function (s) {
     const trim = s.replace(/\W|_/gi, "").toLowerCase();
 
     trim;
