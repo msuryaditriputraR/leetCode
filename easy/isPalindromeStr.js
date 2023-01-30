@@ -44,6 +44,7 @@ const isPalindrome = function (s) {
     return trim.split("").reverse().join("") == trim;
 };
 
+// 2 Pointers
 const isPalindrome2 = function (s) {
     const trim = s.replace(/[\W_]/gi, "").toLowerCase();
 
