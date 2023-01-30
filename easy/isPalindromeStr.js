@@ -30,3 +30,20 @@
   1 <= s.length <= 2 * 105
   s consists only of printable ASCII characters.
 */
+
+// Solution
+
+/**
+ * @param {string} s
+ * @return {boolean}
+ */
+var isPalindrome = function (s) {
+    const trim = s.replace(/\W|_/gi, "").toLowerCase();
+
+    trim;
+
+    return trim.split("").reverse().join("") == trim;
+};
+
+// TESTING
+console.log(isPalindrome("ab_a"));
