@@ -37,11 +37,26 @@
  * @param {string} s
  * @return {boolean}
  */
+
 const isPalindrome = function (s) {
     const trim = s.replace(/\W|_/gi, "").toLowerCase();
 
     return trim.split("").reverse().join("") == trim;
 };
 
+const isPalindrome2 = function (s) {
+    const trim = s.replace(/[\W_]/gi, "").toLowerCase();
+
+    let start = 0,
+        end = trim.length - 1;
+
+    while (start < end) {
+        if (trim[start++] !== trim[end--]) return false;
+    }
+
+    return true;
+};
+
 // TESTING
 console.log(isPalindrome("ab_a"));
+console.log(isPalindrome2("ab_a"));
