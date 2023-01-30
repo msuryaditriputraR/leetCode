@@ -40,8 +40,6 @@
 const isPalindrome = function (s) {
     const trim = s.replace(/\W|_/gi, "").toLowerCase();
 
-    trim;
-
     return trim.split("").reverse().join("") == trim;
 };
 
